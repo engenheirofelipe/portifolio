@@ -1,269 +1,187 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/flexbox.css">
-    <title>AluraPlay</title>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Felipe Casquet Ferreira</title>
 </head>
-
 <body>
-    <!-- Cabecalho -->
     <header>
+        <div class="interface">
+            <section class="logotipo-cabecalho">
+            <h1 class="nome-logo">Felipe Casquet Ferreira</h1>
+            </section>
+            
+            <!-- Menu Desktop -->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
+                    <li><a href="#contato"><button>Contato</button></a></li>
+                </ul>
+            </nav>
 
-        <nav class="cabecalho__container">
-
-            <h1 class="logo__item" href="#"></h1>
-
-            <div class="cabecalho__pesquisar__item">
-                <form action="">
-                    <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input">
-                    <label for="pesquisar" class="pesquisar__label"></label>
-                </form>
-                <a href="#" class="cabecalho__audio"></a>
+            <!-- Botão hamburguer -->
+            <div class="menu-mobile-btn">
+                <i class="bi bi-list"></i>
             </div>
 
-            <div class="cabecalho__icones__item">
-                <a href="#" class="cabecalho__videos"></a>
-                <a href="#" class="cabecalho__apps"></a>
-                <a href="#" class="cabecalho__notificacoes"></a>
-                <a href="#" class="cabecalho__avatar"></a>
-            </div>
-
-        </nav>
-
+            <!-- Menu Mobile -->
+            <nav class="menu-mobile">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
+                    <li><a href="#contato"><button>Contato</button></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
-    <!-- Menu lateral -->
-    <aside class="menu__container">
-        <ul class="menu__lista">
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__inicio icone-item"></i>
-                    <span>Início</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__explorar icone-item"></i>
-                    <span>Explorar</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__shorts icone-item"></i>
-                    <span>Shorts</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__inscricoes icone-item"></i>
-                    <span>Inscrições</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__biblioteca icone-item"></i>
-                    <span>Biblioteca</span></a>
-            </li>
-        </ul>
-
-        <ul class="menu__lista">
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__historico icone-item"></i>
-                    <span>Histórico</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__relogio icone-item"></i>
-                    <span>Assistir mais tarde</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__like icone-item"></i>
-                    <span>Marcados com like</span></a>
-            </li>
-        </ul>
-
-        <ul class="menu__lista">
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__mostrar icone-item"></i>
-                    <span>Mostrar mais 2</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__deschamps icone-item"></i>
-                    <span>Felipe Deschamps</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__nerd icone-item"></i>
-                    <span>Jovem Nerd</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__souto icone-item"></i>
-                    <span>Mario Souto</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__iamarino icone-item"></i>
-                    <span>Atila Iamarino</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__ballerini icone-item"></i>
-                    <span>Rafaella Ballerini</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__gaveta icone-item"></i>
-                    <span>Gaveta</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens" href="#">
-                    <i class="icone__alura icone-item"></i>
-                    <span>Alura</span></a>
-            </li>
-
-            <li>
-                <a class="menu__itens inscricoes" href="#">INSCRIÇÕES</a>
-            </li>
-        </ul>
-
-        <ul class="menu__lista">
-            <li class="jogos">
-                <a class="menu__itens" href="#">
-                    <i class="icone__jogos icone-item"></i>
-                    <span>Jogos</span></a>
-            </li>
-
-            <li class="filmes">
-                <a class="menu__itens" href="#">
-                    <i class="icone__filmes icone-item"></i>
-                    <span>Filmes</span></a>
-            </li>
-            <li class="premium">
-                <a class="menu__itens" href="#">
-                    <i class="icone__videos icone-item"></i>
-                    <span>Vídeo Premium</span></a>
-            </li>
-
-            <li class="menu__itens maispagina">
-                <a href="#">MAIS DA PÁGINA</a>
-            </li>
-        </ul>
-    </aside>
-
-
-    <!-- Seção superior -->
-    <section class="superior__secao__container">
-        <a class="superior__item" href="#">Tudo</a>
-        <a class="superior__item" href="#">Debates</a>
-        <a class="superior__item" href="#">Ao Vivo</a>
-        <a class="superior__item" href="#">Podcasts</a>
-        <a class="superior__item" href="#">Fundos de Investimento</a>
-        <a class="superior__item" href="#">Desenhos</a>
-        <a class="superior__item" href="#">Data Science</a>
-        <a class="superior__item" href="#">Apps</a>
-        <a class="superior__item" href="#">Linguagem de Programação</a>
-        <a class="superior__item" href="#">Ciência da Computação</a>
-        <a class="superior__item" href="#">Marketing</a>
-    </section>
-
-    <!-- Vídeos -->
-    <ul class="videos__container">
-    </ul>
-
-    <!-- <Seção rodapé> -->
-    <footer class="rodape__container">
-        <section>
-            <h2 class="rodape__titulo">Programação</h2>
-            <p class="rodape__texto">Lógica</p>
-            <p>Python</p>
-            <p>Computação</p>
-            <p>Jogos</p>
-            <p>Computação</p>
-            <p>Node JS</p>
+    <main>
+        <section class="hero" id="hero">
+            <div class="interface">
+                <div class="img-hero">
+                    <img src="images/img-felipe.jpg" alt="">
+                </div>
+                <div class="txt-hero">
+                    <h1>Aliado ao usuário,<span>parceiro do resultado.</span></h1>
+                    <p>Acredito que entender pessoas é o primeiro passo para criar experiências que realmente importam. 
+                        Com pesquisa, escuta ativa e design centrado no usuário, transformo necessidades em soluções digitais que conectam, encantam e fazem a empresa crescer.</p>
+                    <a href="#contato"><button>Entre em contato</button></a>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2 class="rodape__titulo">Data Science</h2>
-            <p class="rodape__texto">Ciência de dados</p>
-            <p>BI</p>
-            <p>SQL</p>
-            <p>Banco de Dados</p>
-            <p>Machine Learning</p>
-            <p>NoSQL</p>
+        <section class="sobre-mim" id="sobre-mim">
+            <div class="interface">
+                <div class="txt-sobre">
+                    <h1 class="titulo-section">Quem sou <span>eu ?</span></h1>
+                    <p>Sou um jovem de 22 anos que está no quinto semestre de Engenharia de Software na FIAP em São Paulo. Sou motivado a entregar soluções que 
+                        envolvem tecnologia para problemas que estão presentes na sociedade. Minha principal vocação é na atuação na área de UX/UI Design já que tenho alto grau de empatia 
+                        com o usuário e estou sempre buscando estudar e entender o comportamento humano para que posso entregar soluções para os problemas. 
+                    </p>
+                    <p>Tenho uma mente muito criativa e não só de tecnologia eu vivo. Eu também sou músico multi-instrumentista , compositor e cantor. Produzo minhas próprias canções e lanço minhas músicas para o mundo. Tenho um projeto musical chamado Saving Lipe que está disponível em todas as plataformas digitais.</p>
+                    <div class="btn-redes-sociais">
+                        <a href="https://www.instagram.com/savinglipe/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://github.com/engenheirofelipe" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/felipe-casquet-ferreira-1aa6331a7/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://open.spotify.com/intl-pt/artist/4gW3LWUHqzeeiBlKQ0tiGp" target="_blank"><button><i class="bi bi-spotify"></i></button></a>
+                    </div>
+                </div>
+                <div class="img-sobre">
+                    <img src="images/felipe_corporativo.jpg" alt="Imagem sobre mim">
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2 class="rodape__titulo">UX e Design</h2>
-            <p class="rodape__texto">Photoshop</p>
-            <p>Illustrator</p>
-            <p>Usabilidade</p>
-            <p>Vídeo e Motion</p>
-            <p>Figma</p>
-            <p>Interface</p>
+        <section class="skills" id="skills">
+            <div class="interface">
+                <h1 class="titulo-section">Minhas <span>Habilidades</span></h1>
+                <article>
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="images/ui-ux.png" alt="Imagem de ux/ui">
+                            <h2>UI/UX <span>Design</span></h2>
+                        </div>
+                        <p>Com conhecimento avançado em Figma, consigo produzir interfaces de usuário intuitivas e que resolvem os problemas e necessidades que são notados em todo processo de pesquisa.</p>
+                    </div>
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="images/spell-book.png" alt="Imagem de storytelling">
+                            <h2>Story<span>telling</span></h2>
+                        </div>
+                        <p>Utilizo o poder do storytelling para entender e representar emoções, dores e desejos do usuário. Além disso crio narrativas para explicar o porque de cada decisão de design , conectando dados e insights com emoção lógica</p>
+                    </div>
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="images/web-design.png" alt="Imagem de programação front-end">
+                            <h2>Programação <span>Front-end</span></h2>
+                        </div>
+                        <p>Tenho experiência em HTML e CSS, que utilizo para transformar protótipos de design responsivo em interfaces web. Além disso, possuo conhecimento intermediário em JavaScript.</p>
+                    </div>
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="images/back-end.png" alt="Imagem de programação back-end">
+                            <h2>Programação<span> Back-end</span></h2>
+                        </div>
+                        <p>Tenho experiência em Java e SQL, que utilizo para realizar operações de cadastro, atualização, listagem e exclusão de dados em bancos de dados.</p>
+                    </div>
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="images/management.png" alt="Imagem de ux/ui">
+                            <h2>Gestão de <span>Projetos</span></h2>
+                        </div>
+                        <p>Tenho conhecimento prático em metodologias ágeis e tradicionais de gestão, com foco em organização de equipes, definição de metas e acompanhamento de entregas.</p>
+                    </div>
+                    <div class="box-skills">
+                        <div class="icon-skills">
+                            <img src="images/data-analytics (1).png" alt="Imagem de gestão de projetos">
+                            <h2>Data <span>Analytics</span></h2>
+                        </div>
+                        <p>Tenho conhecimentos práticos em data analytics para tomar decisões estratégicas, orientado por perguntas-chave e dados concretos.</p>
+                    </div>
+                </article>
+
+                <div class="btn-contato">
+                    <a href="#contato"><button>Entre em contato</button></a>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2 class="rodape__titulo">Inovação e Gestão</h2>
-            <p class="rodape__texto">Métodos ágeis</p>
-            <p>Softskills</p>
-            <p>Liderança</p>
-            <p>Gestão</p>
-            <p>Startups</p>
-            <p>Vendas</p>
+        <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <h1 class="titulo-section">Projetos <span>acadêmicos</span></h1>
+                <p>Abaixo estão 4 projetos acadêmicos que são soluções para temas e empresas reais da sociedade.</p>
+                <article class="portfolio-container">
+                    <a href="https://challenge-sijia.vercel.app/" target="_blank">
+                        <div class="portfolio-box projeto1">
+                            <div class="info-portfolio"><p>UX/UI Designer e Desenvolvedor Front-end no website Sijia, plataforma educativa para pacientes pediátricos do ICr, com informações médicas e jogos interativos.
+                            </p></div>
+                        </div>
+                    </a>
+                    <a href="https://algo-front-nu.vercel.app/" target="_blank">
+                        <div class="portfolio-box projeto2">
+                            <div class="info-portfolio"><p>UX/UI Designer e Desenvolvedor Front-end no sistema Peça Certa, site para mecânicos que busca peças via API da Rede Âncora, com filtros por marca e detalhes dos produtos.</p></div>
+                        </div>
+                    </a>
+                    <a href="https://ecodata.onrender.com/" target="_blank">
+                        <div class="portfolio-box projeto3">
+                            <div class="info-portfolio"><p>UX/UI Designer e Desenvolvedor Front-end no Ecodata, sistema web que simula resposta a queimadas com priorização inteligente, rotas otimizadas e registro de ações, usando estruturas de dados para apoiar decisões ambientais.</p></div>
+                        </div>
+                    </a>
+                    <a href="https://www.figma.com/design/MCwcwKCaKbZs8FdGocqdPN/Wine-Hub--Copy-?t=ZRC9bXycHhapdrw6-0" target="_blank">
+                        <div class="portfolio-box projeto4">
+                            <div class="info-portfolio"><p>UX/UI Designer na prototipagem do e-commerce Vinharia Agnello, criado para replicar digitalmente a experiência personalizada das vendas presenciais durante a pandemia.</p></div>
+                        </div>
+                    </a>
+                </article>
+            </div>
         </section>
+    </main>
 
-        <section>
-            <h2 class="rodape__titulo">Front-end</h2>
-            <p class="rodape__texto">HTML</p>
-            <p>CSS</p>
-            <p>React</p>
-            <p>Angular</p>
-            <p>JavaScript</p>
-            <p>jQuery</p>
-        </section>
-
-        <section>
-            <h2 class="rodape__titulo">Devops</h2>
-            <p class="rodape__texto">AWS</p>
-            <p>Azure</p>
-            <p>Docker</p>
-            <p>Segurança</p>
-            <p>IaC</p>
-            <p>Linux</p>
-        </section>
-
-        <section>
-            <h2 class="rodape__titulo">Mobile</h2>
-            <p class="rodape__texto">React Native</p>
-            <p>Flutter</p>
-            <p>iOS</p>
-            <p>Swift</p>
-            <p>Android</p>
-            <p>Kotlin</p>
-        </section>
+    <footer id="contato">
+        <div class="interface">
+            <div class="logo-footer">
+                <h1>Felipe Casquet Ferreira</h1>
+                <p>Website construído por Felipe Casquet - 2025</p>
+            </div>
+            <div class="btn-contatos">
+                <a href="#"><button class="btn-contato"><i class="bi bi-envelope-at-fill"></i>engenheirofelipefc@gmail.com</button></a>
+                <a href="#"><button class="btn-contato"><i class="bi bi-telephone-fill"></i>11955708877</button></a>
+            </div>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,179 @@
+:root {
+  --corAzul:#1A2E6C;
+  --corDourado:#C8B560;
+  --corCinza:#3A3A3A;
+  --corBranca:#F5F7FA;
+  --corAzulEscuro:#051030;
+  --corCizaTexto:#8D8D8D;
+}
+
+@media (min-width:1361px) {
+  .menu-mobile-btn {
+    display: none;
+  }
+  .menu-mobile {
+    display: none;
+  }
+}
+
+@media (max-width:1360px){
+
+    header{
+        background-image: none;
+        background-color:var(--corAzul);
+    }
+
+    .menu-desktop{
+        display:none;
+    }
+    /* Estilo da hero */
+    section.hero{
+        background-image:linear-gradient(to top,var(--corCinza) 60%, var(--corAzul) 100%);
+        padding-top: 200px;
+        min-height: 100vh;
+    }
+
+    .hero > .interface{
+        text-align: center;
+        gap:64px;
+        flex-direction: column-reverse;
+    }
+
+    .hero .interface .img-hero img{
+        width:200px;
+        height:200px;
+        border-radius: 50%;
+    }
+
+    .hero .txt-hero h1{
+        color:var(--corBranca);
+    }
+
+    .hero .txt-hero span{
+        font-size: 3rem;
+    }
+
+    .hero .txt-hero p{
+        font-size: 0.6rem;
+    }
+
+   
+
+    /* Estilo sobre mim */
+    h1.titulo-section{
+        font-size: 2rem;
+        color:var(--corBranca);
+    }
+
+    .sobre-mim > .interface{
+        flex-direction: column;
+        gap:64px;
+    }
+   
+    .img-sobre img{
+        width:200px;
+        height:200px;
+    }
+
+    /* Estilo da seção habilidades */
+    .skills article{
+        grid-template: 1fr 1fr 1fr 1fr / 1fr ;
+    }
+
+    /* Meus projetos */
+    .portfolio .portfolio-container{
+        display:grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+        gap:24px;
+    }
+
+    .portfolio-container .portfolio-box{
+        max-width:250px;
+        margin:0 auto;
+    }
+
+    /* Estilo footer */
+    footer > .interface{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .logo-footer{
+        color:var(--corBranca);
+    }
+
+    .logo-footer h1{
+        margin-top:32px;
+        margin-bottom: 32px;
+        font-size: 1.5rem;
+    }
+
+    .btn-contatos {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; /* Espaço entre os botões */
+        align-items: flex-start; /* Alinha à esquerda, pode trocar por center se quiser centralizado */
+    }
+    .btn-contatos a button i {
+        padding:0 20px 0 0;
+    }
+
+    .btn-contatos a button{
+        padding: 8px;
+    }
+
+    /* Botão hamburguer */
+    .menu-mobile-btn {
+        display: block;
+        font-size: 2rem;
+        color: var(--corBranca);
+        cursor: pointer;
+        z-index: 1001; /* fica acima do menu */
+    }
+
+    /* Menu Mobile */
+    .menu-mobile {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: var(--corAzulEscuro);
+        transition: 0.3s ease;
+        padding: 80px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 1000;
+    }
+
+    .menu-mobile ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-mobile ul button{
+        width:144px;
+        height:48px;
+    }
+
+    .menu-mobile a {
+        color: var(--corBranca);
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .menu-mobile a:hover {
+        color: var(--corDourado);
+    }
+
+    /* Quando ativo */
+    .menu-mobile.active {
+        right: 0;
+    }
+}
