@@ -18,36 +18,25 @@ document.querySelectorAll(".menu-mobile a").forEach(link => {
   });
 });
 
-
-const videoContainer = document.getElementById("video-container");
-const projetos = document.querySelectorAll(".projeto");
-
-function abrirVideo(url) {
-  // cria player
-  videoContainer.innerHTML = `
-    <button class="close-btn">Fechar</button>
-    <video controls autoplay>
-      <source src="${url}" type="video/mp4">
-      Seu navegador não suporta vídeos.
-    </video>
-  `;
-
-  // exibe e faz scroll
-  videoContainer.style.display = "block";
-  videoContainer.scrollIntoView({ behavior: "smooth" });
-
-  // botão fechar
-  videoContainer.querySelector(".close-btn").addEventListener("click", () => {
-    videoContainer.style.display = "none";
-    videoContainer.innerHTML = "";
-  });
-}
-
-// adiciona evento em todos os projetos
-projetos.forEach(projeto => {
-  projeto.addEventListener("click", (e) => {
+document.querySelectorAll('.projeto').forEach(projeto => {
+  projeto.addEventListener('click', function (e) {
     e.preventDefault();
-    const url = projeto.getAttribute("data-video");
-    abrirVideo(url);
+
+    const videoSrc = this.getAttribute('data-video');
+    const container = document.getElementById('video-container');
+
+    // Renderiza o vídeo com autoplay
+    container.innerHTML = `
+      <iframe width="100%" height="500"
+              src="${videoSrc}?autoplay=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+      </iframe>
+    `;
+
+    container.style.display = "block";
+    container.scrollIntoView({ behavior: "smooth" });
   });
 });

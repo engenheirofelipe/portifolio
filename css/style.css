@@ -348,33 +348,15 @@ footer > .interface{
   cursor: auto;
 }
 
-
-
-
-
-
-
 .video-container {
-  max-width: 1000px;
+  width: 100%;
+  max-width: 900px;
   margin: 40px auto;
   display: none; /* escondido até clicar */
-  text-align: center;
 }
 
-.video-container video {
+.video-container iframe {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-}
-
-.video-container .close-btn {
-  display: inline-block;
-  margin-bottom: 10px;
-  padding: 6px 12px;
-  background: #e63946;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
