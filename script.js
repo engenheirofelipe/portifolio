@@ -27,6 +27,7 @@ document.querySelectorAll('.projeto').forEach(projeto => {
 
     // Renderiza o vídeo com autoplay
     container.innerHTML = `
+      <button id="fechar-video" aria-label="Fechar vídeo">&times;</button>
       <iframe width="100%" height="500"
               src="${videoSrc}?autoplay=1"
               title="YouTube video player"
@@ -38,5 +39,14 @@ document.querySelectorAll('.projeto').forEach(projeto => {
 
     container.style.display = "block";
     container.scrollIntoView({ behavior: "smooth" });
+
+     setTimeout(() => {
+      window.scrollBy({ top: -80, left: 0, behavior: "smooth" });
+    }, 400);
+
+    document.getElementById('fechar-video').onclick = function(){
+      container.innerHTML = "";
+      container.style.display = "none";
+    }
   });
 });
