@@ -38,11 +38,13 @@ document.querySelectorAll('.projeto').forEach(projeto => {
     `;
 
     container.style.display = "block";
-    container.scrollIntoView({ behavior: "smooth" });
+    container.scrollIntoView({ behavior: "smooth",block: "center" });
 
-     setTimeout(() => {
-      window.scrollBy({ top: -80, left: 0, behavior: "smooth" });
-    }, 400);
+    if (window.innerWidth > 600) {
+      setTimeout(() => {
+        window.scrollBy({ top: -90, left: 0, behavior: "smooth" });
+      }, 400);
+    }
 
     document.getElementById('fechar-video').onclick = function(){
       container.innerHTML = "";
