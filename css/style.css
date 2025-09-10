@@ -297,6 +297,11 @@ section.portfolio{
   width:180px;
   height:80px;
 }
+.portfolio-container .portfolio-box .info-portfolio .header-info-portfolio .img-tripideias{
+  width:120px;
+  height:80px;
+}
+
 .portfolio-container .portfolio-box .info-portfolio .header-info-portfolio h3{
   font-size: 1rem;
   color:var(--corAzulEscuro);

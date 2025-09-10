@@ -17,7 +17,6 @@
 }
 
 @media (max-width:1360px){
-
     header{
         background-image: none;
         background-color:var(--corAzul);
@@ -29,6 +28,18 @@
 
     .galeria-container{
         padding: 100px 5% 50px;
+    }
+
+    .info-galeria{
+        grid-template-columns: 1fr;    
+    }
+
+    .processo_info{
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-container p{
+        width:100%;
     }
 
     /* Estilo da galeria */
