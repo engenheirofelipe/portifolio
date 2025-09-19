@@ -59,6 +59,21 @@ button:hover{
   color:var(--corAzul);
 }
 
+#btn_acessar_projeto{
+  background-color: transparent;
+  color:var(--corAzul);
+  border-radius: 10px;
+  cursor:pointer;
+  font-size: 1rem;
+  transition:.3s;
+  border:2px solid var(--corAzul);
+}
+
+#btn_acessar_projeto:hover{
+  background-color: var(--corDourado);
+  color:var(--corAzul);
+}
+
 header > .interface{
   display:flex;
   align-items: center;
@@ -298,7 +313,7 @@ section.portfolio{
   height:80px;
 }
 .portfolio-container .portfolio-box .info-portfolio .header-info-portfolio .img-tripideias{
-  width:120px;
+  width:100px;
   height:80px;
 }
 

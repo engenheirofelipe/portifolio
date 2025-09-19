@@ -231,6 +231,17 @@ header nav.menu-desktop button{
  margin-top: 20px;
 }
 
+.processo_info_paragrafo .imagens_mockup{
+  margin:5% 0;
+  width:0 auto;
+  display:flex;
+}
+
+.imagens_mockup img{
+  width:380px;
+  height:380px;
+}
+
 .galeria-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

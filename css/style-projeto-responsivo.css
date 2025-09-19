@@ -42,6 +42,17 @@
         width:100%;
     }
 
+    .processo_info_paragrafo .imagens_mockup{
+        width:0 auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagens_mockup img{
+        width:280px;
+        height:280px;
+    }
+
     /* Estilo da galeria */
     .galeria-grid {
         grid-template-columns: repeat(2, 1fr);
