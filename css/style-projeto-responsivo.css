@@ -172,6 +172,7 @@
         cursor: pointer;
         
     }
+   
 }
 
 /* Responsividade adicional para telas menores */
@@ -185,6 +186,11 @@
         grid-template-columns: 1fr;
         grid-gap: 12px;
     }
-    
-   
+
+    .imagens_mockup .img_tripideias_mockup{
+        width:380px;
+        height:380px;
+        margin:50px 0;
+    }
+
 }
