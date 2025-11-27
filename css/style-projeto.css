@@ -241,10 +241,16 @@ header nav.menu-desktop button{
 }
 
 .imagens_mockup .img_tripideias_mockup{
-  width:580px;
-  height:580px;
+  width:220px;
+  height:220px;
   margin:50px 0;
 }
+.imagens_mockup img{
+  width:420px;
+  height:420px;
+  margin:50px 0;
+}
+
 
 .galeria-grid {
     display: grid;
